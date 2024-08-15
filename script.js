@@ -2,8 +2,8 @@ const img_array = document.getElementsByClassName("image");
 
 for (var i = 0; i < img_array.length; i++) {
 
-  var top = Math.floor(Math.random()*6000)-500;
-  var left = Math.floor(Math.random()*90)-10;
+  var top = Math.floor(Math.random()*5500);
+  var left = Math.floor(Math.random()*90);
 
   img_array[i].style.top = top+"px";
   img_array[i].style.left = left+"vw";
