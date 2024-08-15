@@ -31,7 +31,7 @@ body {
   background-repeat: repeat;
   background-size: auto;
   border: none;
-  height: 2000px;
+  height: 6000px;
 }
 
 .container {
@@ -49,7 +49,7 @@ body {
   z-index: 9999;
   background: url("gifs/front-logobutton.gif") no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   cursor: pointer;
   display: block;
   margin: 0;
