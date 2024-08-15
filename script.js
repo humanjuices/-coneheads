@@ -3,13 +3,8 @@ const img_array = document.getElementsByClassName("image");
 for (var i = 0; i < img_array.length; i++) {
 
   var top = Math.floor(Math.random()*6000)-500;
-  if (top < 0){
-    top = top + 500;
-  }
   var left = Math.floor(Math.random()*90)-10;
-  if (left < 0){
-    left = left + 10;
-  }
+
   img_array[i].style.top = top+"px";
   img_array[i].style.left = left+"vw";
 }
