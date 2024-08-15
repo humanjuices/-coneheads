@@ -1,8 +1,17 @@
 const img_array = document.getElementsByClassName("image");
 
 for (var i = 0; i < img_array.length; i++) {
-  img_array[i].style.top = Math.floor(Math.random()*5500)+"px";
-  img_array[i].style.left = Math.floor(Math.random()*90)+"vw";
+
+  var top = Math.floor(Math.random()*6000)-500;
+  if (top < 0){
+    top = top + 500;
+  }
+  var left = Math.floor(Math.random()*90)-10;
+  if (left < 0){
+    left = left + 10;
+  }
+  img_array[i].style.top = top+"px";
+  img_array[i].style.left = left+"vw";
 }
 
 // document.getElementById("safety-first-button").addEventListener("click", loadAudio());
@@ -11,7 +20,7 @@ function loadAudio() {
 
   console.log("Entered loadAudio()")
 
-  audio_module = document.createElement("audio");
+  var audio_module = document.createElement("audio");
   audio_module.src = "audio/musictoears.mp3";
   // audio_module.controls = 'controls autoplay';
   audio_module.setAttribute("preload", "auto");
