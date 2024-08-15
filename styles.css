@@ -19,7 +19,6 @@
 html,body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -32,7 +31,10 @@ body {
   background-size: auto;
   border: none;
   height: 2000px;
-  width: 100%;
+}
+
+.container {
+  overflow-x: hidden;
 }
 
 .image{
