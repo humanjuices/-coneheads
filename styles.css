@@ -1,10 +1,10 @@
-.titlefont{
+.titlefont {
   font-family: "narly", sans-serif;
   font-weight: 700;
   font-style: normal
 }
 
-.titleregularfont{
+.titleregularfont {
   font-family: "narly", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
 }
 
-.image{
+.image {
   position: absolute;
   z-index:1;
 }
