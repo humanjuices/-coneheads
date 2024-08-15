@@ -18,15 +18,20 @@
 
 html,body {
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background-color: black;
   background-image: url("image/background2.png");
   background-repeat: repeat;
-  background-size: 100% auto;
+  background-size: auto;
   border: none;
   height: 2000px;
+  width: 100%;
 }
 
 .image{
@@ -35,10 +40,12 @@ body {
 }
 
 .enter {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  z-index:9999;
-  background: url("gifs/front-logobutton.gif");
+  z-index: 9999;
+  background: url("gifs/front-logobutton.gif") no-repeat;
+  background-size: cover;
   cursor: pointer;
   display: block;
+  margin: 0;
 }
